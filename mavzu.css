@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+::selection {
+  background-color: #7209b7;
+
+  color: white;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+
+  background-color: #7209b7;
+}
+
+.head {
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.head a {
+  color: #f2f6fc;
+
+  text-decoration: none;
+}
+
+.head .logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.head img {
+  display: none;
+  }
+.mainM {
+  width: 100%;
+  height: 100vh;
+}
+
+.sectionM {
+  width: 100%;
+  height: 600vh;
+  word-spacing: 10px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.sectionT {
+  width: 100%;
+  height: 100vh;
+  word-spacing: 10px;
+  text-align: justify;
+  line-height: 25px;
+}
+.box1 {
+  width: 80%;
+  height: 100vh;
+  margin: 50px auto;
+}
+
+.box1 h3 {
+  color: #7209b7;
+  text-align: center;
+}
+
+.matrix {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    display: none;
+  }
+
+  .head img {
+    display: block;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .burgerMenu {
+    width: 45%;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    background-color: #7109b7c4;
+    z-index: 2;
+    display: none;
+  }
+
+  .menu {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #f2f6fc;
+  }
+  .menu img {
+    width: 35px;
+    position: absolute;
+    right: 10px;
+    top: -54px;
+  }
+  .swot {
+    width: 400px;
+    background-color: red;
+  }
+  .matrix {
+    width: 100%;
+  }
+}

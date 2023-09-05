@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+::selection {
+  background-color: #7209b7;
+
+  color: white;
+}
+
+body {
+background-color: #f2f6fc;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+
+  background-color: #7209b7;
+}
+
+.head {
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.nav {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.head a {
+  color: #f2f6fc;
+
+  text-decoration: none;
+}
+
+.head .logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+
+.head img {
+  display: none;
+  }
+
+.burgerMenu{
+  display: none;
+}
+
+/* main */
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(166, 166, 166);
+}
+
+.section {
+  width: 100%;
+  height: 90vh;
+  background-color: #f2f6fc;
+  background-image: url("./img/education.png");
+}
+
+.section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f6fc88; 
+}
+
+.section2 {
+  width: 100%;
+  height: 90vh;
+  background-color: #f2f6fc;
+}
+
+.box1 {
+  width: 80%;
+  height: 90vh;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+
+}
+
+.box1 .box1-text {
+  width: 50%;
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  font-size: 20px;
+  word-spacing: 10px;
+  line-height: 24px;
+  text-align: justify;
+
+}
+
+.box1 .teacherImg {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+
+}
+
+.box1 b {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+.box2 {
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box2 span {
+  padding-left: 100px;
+}
+
+.box2 h1 {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.box2 .mavzularA{
+  width: 200px;
+  position: absolute;
+  right: 40px;
+  top: 500px;
+  color: #7209b7;
+  text-decoration: none;
+}
+.footer {
+}
+
+
+@media screen and (max-width: 1280px) {
+  .section{
+    height: 80vh;
+  }
+  .box1 .teacherImg {
+    width: 500px;
+  position: absolute;
+  right: 0;
+  top: 210px;
+
+  }
+}
+@media screen and (max-width: 760px) {
+  .section{
+    height: 84vh;
+
+  }
+  .box1 b{
+    position: absolute;
+    top: 130px;
+  }
+  .box1 .teacherImg {
+    width: 500px;
+  position: absolute;
+  right: 0;
+  top: 210px;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .nav {
+    display: none;
+  }
+
+
+  .head img {
+    display: block;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .section {
+    width: 100%;
+    height: 75vh;
+    background-color: #f2f6fc;
+  }
+  .burgerMenu {
+    width: 45%;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    background-color: #7109b7c4;
+    z-index: 2;
+    display: none;
+
+  }
+  .menu{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .menu a{
+    text-decoration: none;
+    color: #f2f6fc;
+    
+  }
+  .menu img{
+    width: 35px;
+    position: absolute;
+    right: 10px;
+    top: -54px;
+  }
+  .box1 {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .box1 .box1-text {
+    width: 90%;
+    height: 250px;
+    position: relative;
+    top: 100px;
+    color: #040404;
+    word-spacing: 10px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .box1 b{
+    position: absolute;
+    top: 120px;
+  }
+  .box1 .teacherImg {
+    width: 360px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+  }
+  
+  .section2{
+    height: 70vh;
+  }
+
+  .box2 .mavzularA{
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 550px;
+  
+  }
+
+
+}
+
+
+@media screen and (max-width: 360px) {
+  .box1 .box1-text {
+    width: 90%;
+    height: 250px;
+    position: relative;
+    top: 40px;
+    color: #040404;
+    word-spacing: 10px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .box1 b{
+    position: absolute;
+    top: 150px;
+    /* right: 0; */
+  }
+  .box1 .teacherImg {
+    width: 260px;
+    position: relative;
+    top: 0px;
+    left: 80px;
+  }
+}
